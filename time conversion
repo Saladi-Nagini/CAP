@@ -1,0 +1,13 @@
+ public static String timeConversion(String s) {
+    // Write your code here
+    String hh=s.substring(0,2);
+    String common=s.substring(2,8);
+    String noons=s.substring(8,10);
+    int h=Integer.valueOf(hh)%12;
+    if(s.endsWith("PM")){
+        h+=12;
+    }
+    return String.format("%02d",h)+s.substring(2,8);
+   
+    }
+    
