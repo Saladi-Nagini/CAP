@@ -1,0 +1,13 @@
+public static void miniMaxSum(List<Integer> arr) {
+        long min=0;
+        int n=arr.size();
+        Collections.sort(arr);  
+      for(int i=0;i<4;i++){
+         min=min+arr.get(i);
+      }
+      long max=0;
+      for(int j=n-4;j<n;j++){
+          max=max+arr.get(j);
+      }
+      System.out.println(min+" "+max);
+    }
